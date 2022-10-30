@@ -20,13 +20,7 @@ a {
     background-color: var(--color-lighty);
 }
 
-/* html { 
-      background: url(images/bg.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    } */
+
 
 body {
     min-width: 350px;
@@ -113,7 +107,7 @@ body {
 
 .carousel-inner {
     position: relative;
-    height: 36vh;
+    height: calc(100vw - 40vw);
 }
 
 .carousel-item {
@@ -141,7 +135,6 @@ body {
 .btn-group {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     z-index: 1;
     position: absolute;
@@ -162,9 +155,13 @@ body {
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     color: whitesmoke;
     font-size: 3vw;
+    width: 100%;
 }
 
 .bi-chevron-right {
@@ -183,13 +180,14 @@ body {
     margin: 1rem 0;
 }
 
-/* -------------------------------cards--kiállítás--------------------- */
-
-.cards {
-    padding-top: 200px;
+.container-items {
+    top: 300px;
 }
 
+/* -------------------------------cards--kiállítás--------------------- */
+
 .container-cards {
+
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
@@ -230,7 +228,7 @@ body {
 
 .card:hover {
     opacity: 0.8;
-    cursor: none;
+    cursor: default;
 }
 
 .shape-corner {
@@ -264,7 +262,7 @@ body {
 /* --------------------------------könyvek-forgótár---books------------------------------- */
 
 .books {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 .books-container {
@@ -277,10 +275,27 @@ body {
     padding: 1rem;
 }
 
-figure>p {
+.rotate>p {
     position: absolute;
     top: 7rem;
-    left: -1.3rem;
+    left: 0.4rem;
+    color: aliceblue;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+
+.rotate>input {
+    width: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
+    z-index: -1;
+}
+
+figure>h5 {
+    position: absolute;
+    top: 7rem;
+    left: -0.3rem;
     color: aliceblue;
     transform: rotate(-90deg);
     z-index: -1;
@@ -295,7 +310,6 @@ figure>p {
     max-width: 315px;
     height: 220px;
     width: 100%;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
 }
 
 .rotate img {
@@ -303,13 +317,41 @@ figure>p {
     position: absolute;
     right: 0;
     -webkit-transition: all 2s ease-out;
-    transition: all 2s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .rotate:hover img {
     -webkit-transform: translateX(100px);
+    transform: translateX(150px);
+}
+
+.rotate:onclick img {
+    -webkit-transform: translateX(100px);
     transform: translateX(100px);
 }
+
+#answer {
+    width: 4rem;
+}
+
+.ordered-books {
+    background-color: var(--color-main);
+    padding: 1rem;
+}
+
+.ordered-books>button {
+    border-radius: 5px;
+}
+
+.price-box {
+    position: relative;
+    bottom: -2.5rem;
+    left: -5.3rem;
+    color: aliceblue;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+
 
 /* -------------------------------contact-form---------------------------------------- */
 
@@ -381,12 +423,8 @@ figure>p {
     color: var(--color-main);
 }
 
-.contact {
-    /* min-height:100vh; */
-}
-
 .container-contact {
-    padding-top: 100px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
 }
@@ -402,6 +440,7 @@ figure>p {
 }
 
 .fa-arrow-alt-circle-up {
+    z-index: 10;
     position: fixed;
     bottom: 1rem;
     right: 0.5rem;
@@ -413,24 +452,11 @@ figure>p {
 }
 
 /* ---------------------------------------media----------------------------------------------------- */
-@media screen and (min-width: 540px) {
-    .carousel-inner {
-        height: 48vh;
-    }
-}
+@media screen and (min-width: 540px) {}
 
-@media screen and (min-width: 720px) {
-    .carousel-inner {
-        position: relative;
-        height: 66vh;
-    }
-}
+@media screen and (min-width: 720px) {}
 
 @media screen and (min-width: 960px) {
-    .carousel-inner {
-        position: relative;
-        height: 66vh;
-    }
 
     .button {
         font-size: 2.5vw;
@@ -442,10 +468,7 @@ figure>p {
         grid-template-columns: 33.3% 33.3% 33.3%;
     }
 
-    .carousel-inner {
-        position: relative;
-        height: 92vh;
-    }
+
 }
 
 @media screen and (min-width: 1400px) {
