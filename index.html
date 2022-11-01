@@ -262,9 +262,10 @@
         <div class="books" id="shop">
             <h1>SHOP</h1>
             <div class="ordered-books">
-                <p> Megrendelt könyvek száma: <input id="answer"> db </p>
+                <p> Megrendelt könyvek száma: <input id="answer-pieces" disabled> db </p>
+                <p> Összesen: <input id="answer-price" disabled> Ft </p>
                 <button onclick="add()">Lekérdez</button>
-                <p> </p>
+                <p> Válaszd ki a rendeléshez zsükséges darabszámokat. </p>
             </div>
             <div class="shopping-cart">
                 <div class="books-container">
@@ -272,57 +273,57 @@
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book3.jpg" alt="ls-sample3" />
                             <div class="price-box">
-                                <h5 class="price"> Karácsony </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> Karácsony </h5>
+                                <p class="price3" value="55">2000</p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk3"> </input>
                         </figure>
                     </div>
 
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book4.jpg" alt="ls-sample4" />
                             <div class="price-box">
-                                <h5 class="price"> Biblia </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> Biblia </h5>
+                                <p class="price4">2000 HUF</p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk4"> </input>
                         </figure>
                     </div>
 
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book5.jpg" alt="ls-sample5" />
                             <div class="price-box">
-                                <h5 class="price"> Kék könyv </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> Kék könyv </h5>
+                                <p class="price5">3000 HUF </p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk5"> </input>
                         </figure>
                     </div>
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book6.jpg" alt="ls-sample6" />
                             <div class="price-box">
-                                <h5 class="price"> 1000 CHAIRS </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> 1000 CHAIRS </h5>
+                                <p class="price6">4000 HUF </p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk6"> </input>
                         </figure>
                     </div>
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book7.jpg" alt="ls-sample7" />
                             <div class="price-box">
-                                <h5 class="price"> Látomás </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> Látomás </h5>
+                                <p class="price7">5000 HUF </p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk7"> </input>
                         </figure>
                     </div>
                     <div class="product-box">
                         <figure class="rotate"><img src="/assets/book8.jpg" alt="ls-sample8" />
                             <div class="price-box">
-                                <h5 class="price"> CHAOS </h5>
-                                <p class="price">8000 HUF </p>
+                                <h5 class="title"> CHAOS </h5>
+                                <p class="price8">6000 HUF </p>
                             </div>
-                            <input placeholder="darab" type="number" value="0" class="bk8"> </input>
+                            <input placeholder="darab" type="number" value="0" min="0" class="bk8"> </input>
                         </figure>
                     </div>
 
