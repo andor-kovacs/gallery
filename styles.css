@@ -20,10 +20,7 @@ a {
     background-color: var(--color-lighty);
 }
 
-
-
 body {
-    min-width: 350px;
     height: 100%;
     font-family: "Roboto", sans-serif;
 }
@@ -47,6 +44,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     color: whitesmoke;
+    height: 2.5rem;
 }
 
 .nav-link {
@@ -75,7 +73,6 @@ body {
 }
 
 .navbar-expand-sm {
-    position: fixed;
     width: 100%;
     z-index: 10;
     text-transform: uppercase;
@@ -180,9 +177,7 @@ body {
     margin: 1rem 0;
 }
 
-.container-items {
-    top: 300px;
-}
+.container-items {}
 
 /* -------------------------------cards--kiállítás--------------------- */
 
@@ -261,8 +256,10 @@ body {
 
 /* --------------------------------könyvek-forgótár---books------------------------------- */
 
-.books {
-    padding-top: 150px;
+.books>p {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
 .books-container {
@@ -321,6 +318,7 @@ figure>h5 {
 }
 
 .rotate:hover img {
+    overflow: hidden;
     -webkit-transform: translateX(100px);
     transform: translateX(150px);
 }
@@ -334,6 +332,11 @@ figure>h5 {
     width: 4rem;
 }
 
+.answer-pieces {
+    width: 1rem;
+
+}
+
 .ordered-books {
     background-color: var(--color-main);
     padding: 1rem;
@@ -341,10 +344,21 @@ figure>h5 {
 
 .ordered-books>button {
     border-radius: 5px;
+    margin: 0 0 1rem 0;
 }
 
-.ordered-books>p>input {
-    left: 100px;
+.books-details {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+#answer-pieces,
+#answer-price {
+
+    width: 5rem;
+    height: 2rem;
 }
 
 .price-box {
