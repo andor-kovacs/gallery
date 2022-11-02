@@ -161,8 +161,7 @@ body {
     font-size: 3vw;
 } */
 
-=======
-.button {
+=======.button {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,7 +170,6 @@ body {
     font-size: 3vw;
     width: 100%;
 }
->>>>>>> e29dec59e586884042697760fe3e88b6772a413c
 
 .bi-chevron-right {
     /*carousel button array */
@@ -267,6 +265,9 @@ body {
 }
 
 /* --------------------------------könyvek-forgótár---books------------------------------- */
+.books {
+    background: linear-gradient(to right bottom, var(--color-main)10%, rgb(33, 37, 41)91%);
+}
 
 .books>p {
     display: flex;
