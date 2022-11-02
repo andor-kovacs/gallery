@@ -2,7 +2,7 @@
 function add() {
     var sum = 0;
     let result = 0;
-    for (let i = 3; i < 9; i++) {
+    for (let i = 3; i <= 9; i++) {
         let numbers = parseInt(document.querySelector(`.bk${i}`).value);
         sum += numbers;
         document.getElementById("answer-pieces").value = sum;
