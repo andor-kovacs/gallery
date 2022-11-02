@@ -117,7 +117,6 @@ body {
     position: absolute;
     top: 43vw;
     left: 10vw;
-    text-shadow: ;
     color: whitesmoke;
     z-index: 2;
     text-shadow: 2px 2px 3px black;
@@ -129,7 +128,8 @@ body {
     top: -20px;
 }
 
-.btn-group {
+.button {
+    color: whitesmoke;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -140,7 +140,7 @@ body {
     width: 28vw;
     background-color: var(--color-main);
     border-radius: 20px;
-    padding: 0 2rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .btn-group:hover {
@@ -151,7 +151,17 @@ body {
     color: whitesmoke;
 }
 
-.button {
+<<<<<<< HEAD
+/* .button {
+    display: flex;
+    column-gap: 10rem;
+    align-items: center;
+    position: relative;
+    color: whitesmoke;
+    font-size: 3vw;
+} */
+
+=======.button {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,6 +265,9 @@ body {
 }
 
 /* --------------------------------könyvek-forgótár---books------------------------------- */
+.books {
+    background: linear-gradient(to right bottom, var(--color-main)10%, rgb(33, 37, 41)91%);
+}
 
 .books>p {
     display: flex;
@@ -491,7 +504,7 @@ figure>h5 {
 
 @media screen and (min-width: 1400px) {
     .btn-group {
-        bottom: -40vw;
+        bottom: 15vw;
     }
 
     .carousel-item>h2 {
