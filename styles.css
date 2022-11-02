@@ -126,7 +126,6 @@ body {
     position: absolute;
     top: 43vw;
     left: 10vw;
-    text-shadow: ;
     color: whitesmoke;
     z-index: 2;
     text-shadow: 2px 2px 3px black;
@@ -138,7 +137,8 @@ body {
     top: -20px;
 }
 
-.btn-group {
+.button {
+    color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,7 +150,7 @@ body {
     width: 28vw;
     background-color: var(--color-main);
     border-radius: 20px;
-    padding: 0 2rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .btn-group:hover {
@@ -161,11 +161,15 @@ body {
     color: whitesmoke;
 }
 
-.button {
+/* .button {
+    display: flex;
+    column-gap: 10rem;
+    align-items: center;
     position: relative;
     color: whitesmoke;
     font-size: 3vw;
-}
+} */
+
 
 .bi-chevron-right {
     /*carousel button array */
@@ -450,7 +454,7 @@ figure>p {
 
 @media screen and (min-width: 1400px) {
     .btn-group {
-        bottom: -40vw;
+        bottom: 15vw;
     }
 
     .carousel-item>h2 {
